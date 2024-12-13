@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aircraft Checklist</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#boeing" onclick="filterChecklist('boeing')">Boeing</a></li>
+        <li><a href="#airbus" onclick="filterChecklist('airbus')">Airbus</a></li>
+        <li><a href="#lockheed" onclick="filterChecklist('lockheed')">Lockheed</a></li>
+        <li><a href="#cessna" onclick="filterChecklist('cessna')">Cessna</a></li>
+        <li><a href="#embraer" onclick="filterChecklist('embraer')">Embraer</a></li>
+      </ul>
+    </nav>
+    <input type="text" id="search-bar" placeholder="Search for Aircraft..." onkeyup="searchAircraft()">
+  </header>
+
+  <div id="content">
+    <div id="boeing" class="checklist-content">
+      <h2>Boeing Checklists</h2>
+      <a href="checklists/boeing/boeing_checklist.html" target="_blank">View Boeing Checklist</a>
+    </div>
+    <div id="airbus" class="checklist-content">
+      <h2>Airbus Checklists</h2>
+      <a href="checklists/airbus/airbus_checklist.html" target="_blank">View Airbus Checklist</a>
+    </div>
+    <div id="lockheed" class="checklist-content">
+      <h2>Lockheed Checklists</h2>
+      <a href="checklists/lockheed/lockheed_checklist.html" target="_blank">View Lockheed Checklist</a>
+    </div>
+    <div id="cessna" class="checklist-content">
+      <h2>Cessna Checklists</h2>
+      <a href="checklists/cessna/cessna_checklist.html" target="_blank">View Cessna Checklist</a>
+    </div>
+    <div id="embraer" class="checklist-content">
+      <h2>Embraer Checklists</h2>
+      <a href="checklists/embraer/embraer_checklist.html" target="_blank">View Embraer Checklist</a>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
